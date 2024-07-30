@@ -1,0 +1,357 @@
+/* ***** Navigation CSS ***** */
+nav {
+    top: 0;
+    width: 100%; /* Adjusted width */
+    z-index: 1000;
+    background-color: #3a3838;
+    margin: 0; /* Removed margin */
+    position: fixed;
+    padding: 20px; /* Combined padding */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Added to wrap elements on smaller screens */
+}
+
+.brand {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #777;
+}
+
+/* Responsive adjustments for navigation */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand {
+        margin: 5px 0 10px 0;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+}
+
+/* ***** Home CSS ***** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.container {
+    width: 100%; /* Adjusted width */
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/high-angle-desktop-with-laptop-copy-space_23-2148430882.jpg?w=900&t=st=1705003839~exp=1705004439~hmac=b8348bae2abc4523655bb8c38c8ebbc2e0a6c71cc81910cf9ff56492de3535c1");
+    background-size: cover; /* Adjusted background-size */
+    background-position: center;
+    color: rgb(158, 95, 181);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 15px solid black;
+    margin: 0; /* Removed margin */
+}
+
+.container h4, .container h3, .container h2 {
+    color: aliceblue;
+}
+
+.container h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 130px;
+}
+
+.container h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.container h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.auto-type {
+    color: rgb(162, 97, 195);
+}
+
+/* ***** About CSS ***** */
+.conta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background-color: rgb(167, 167, 167);
+    width: 100%; /* Adjusted width */
+    margin: 0; /* Removed margin */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: rgb(49, 117, 194);
+    text-decoration: underline;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column; /* Adjusted for responsiveness */
+    align-items: center; /* Centered items */
+    gap: 20px;
+}
+
+.image-box {
+    width: 90%; /* Adjusted width */
+    height: auto; /* Adjusted height */
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.resume-paragraph {
+    flex-grow: 1;
+    text-align: center; /* Centered text */
+}
+
+.resume-paragraph h4 {
+    color: black;
+    font-size: 202%;
+}
+
+.resume-paragraph p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0; /* Adjusted margin */
+}
+
+.auto {
+    color: rgb(48, 114, 188);
+}
+
+/* ***** Contact CSS ***** */
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(182, 178, 178);
+    width: 100%; /* Adjusted width */
+    margin: 0; /* Removed margin */
+}
+
+.contact-section h2 {
+    font-size: 30px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Adjusted for responsiveness */
+    align-items: center; /* Centered items */
+    gap: 10%;
+}
+
+.contact-info div {
+    width: 90%; /* Adjusted width */
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    color: rgb(7, 52, 58);
+}
+
+.contact-info img {
+    width: 100%;
+}
+
+.contact-info > *:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* ***** Skills CSS ***** */
+.box {
+    width: 100%; /* Adjusted width */
+    margin: 0; /* Removed margin */
+    height: auto; /* Adjusted height */
+    background-color: #3e3434;
+}
+
+.box h1 {
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 5%;
+    font-size: 50px;
+}
+
+.boxchild {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for responsiveness */
+    padding: 0 10%; /* Adjusted padding */
+    gap: 20px;
+    color: rgb(109, 194, 206);
+    text-align: center;
+}
+
+.boxchild > *:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.boxchild div {
+    width: 100%; /* Adjusted width */
+    font-size: 30px;
+}
+
+.boxchild img {
+    width: 100%;
+}
+
+.box h2 {
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 6%;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+.boxchild2 {
+    display: flex;
+    flex-direction: column; /* Adjusted for responsiveness */
+    align-items: center; /* Centered items */
+    gap: 20px;
+    padding: 0 10%;
+    color: rgb(109, 194, 206);
+}
+
+.boxchild2 > *:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.boxchild2 div {
+    width: 90%; /* Adjusted width */
+    font-size: 30px;
+    height: auto; /* Adjusted height */
+    text-align: center;
+}
+
+.boxchild2 img {
+    width: 100%;
+    height: auto; /* Adjusted height */
+}
+
+/* ***** Projects CSS ***** */
+#projects {
+    height: fit-content;
+    width: 100%; /* Adjusted width */
+    margin: 0; /* Removed margin */
+    background-color: #494848;
+    text-align: center;
+}
+
+#projects h1 {
+    color: aliceblue;
+}
+
+.pro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for responsiveness */
+    gap: 20px;
+}
+
+.calculator-title {
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    width: 85%;
+    height: auto; /* Adjusted height */
+    border: 1px solid rgb(246, 180, 180);
+    text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 30px; /* Adjusted margin */
+}
+
+.calculator-title img {
+    width: 100%;
+}
+
+.calculator-title > *:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.link-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-with-icon i {
+    margin-left: 8px;
+}
+
+/* ***** GitHub CSS ***** */
+#github {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-top: 30px;
+}
+
+#github h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#github div {
+    display: inline-block;
+    margin: 10px;
+}
+
+#github img {
+    width: 100%; /* Adjusted width */
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#github img:hover {
+    transform: scale(1.05);
+}
